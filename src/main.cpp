@@ -177,7 +177,7 @@ void loop() {
                 Serial.print(humidity);
                 Serial.println("%");
                 
-                //Create a JSON object with the data - FIXED
+                //Create a JSON object with the data 
                 writer.create(obj1, "/temperature", temperature);
                 writer.create(obj2, "/humidity", humidity);
                 writer.create(obj3, "/time", timestamp);
